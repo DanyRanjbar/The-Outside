@@ -1,0 +1,59 @@
+.boody{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .container{
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between !important;
+  }
+  
+  .circle{
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #8fb79e;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle .6s alternate infinite ease;
+  }
+  
+  @keyframes circle {
+    0%{
+      top: 60px;
+      height: 5px;
+      border-radius: 20px 20px 5px 5px;
+      transform: scaleX(1.5);
+    }
+    40%{
+      height: 40px;
+      border-radius: 20%;
+      transform: scaleX(1);
+    }
+    100%{
+      top: 0%;
+    }
+  
+  }
+  
+  .circle:nth-child(2) {
+    left: 40%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3){
+    left: 66%;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  

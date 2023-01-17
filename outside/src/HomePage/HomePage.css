@@ -1,0 +1,266 @@
+
+/* Header */
+header{
+    height: 100px;
+    background-color: #E7E9DE;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo-img-container{
+    width: 11rem;
+    height: 4rem;
+}
+.Login-buttonn{
+    width: 8rem;
+    height: 3rem;
+    border: 2px solid black;
+    background-color: transparent;
+    transition: 0.2s !important;
+}
+.signin-buttonn:hover{
+    color: #000000a8 !important;
+    transition: 0.2s !important;
+}
+#navbar{
+    transition: 0.4s;
+}
+.p-tag-header a{
+    border: transparent;
+    background-color: transparent;
+    transition: 0.2s;
+    color: black !important;
+    text-decoration: none !important;
+}
+.p-tag-header a:hover{
+    color: #0000008e !important;
+    transition: 0.2s;
+}
+.p-id-tag{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* First page */
+.first-page-container{
+    min-height: 90vh;
+    background-color: #E7E9DE;
+}
+.first-img-container{
+    width: 52%;
+    margin-right: 12%;
+}
+.big-text{
+    font-size: 700%;
+    font-weight: 700;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url(https://wallpapercave.com/wp/wp11554238.jpg);
+}
+.first-text-container{
+    margin-left: 10%;
+}
+
+.getstarted-button{
+    border: 1px solid #0C1631;
+    background-color: #0C1631;
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+
+/* responsive first page */
+.responsive-first-page-container{
+    min-height: 90vh;
+    background-color: #E7E9DE;
+    display: none !important;
+}
+.responsive-first-img-container{
+    opacity: 10%;
+    min-width: 50vh;
+    max-width: 50vh;
+    margin-top: 30px;
+    position: relative;
+}
+.responsive-first-text-container{
+    width: 100%;
+    margin-left: 10%;
+    position: absolute;
+    top: 38%;
+}
+
+/* Second page */
+.second-page-container{
+    min-height: 100vh;
+    padding-top: 150px;
+}
+
+/* Third page */
+.third-page-container{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.third-img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.third-text-container{
+    margin-left: 52%;
+    margin-top: 9%;
+}
+
+
+/* footer */
+footer{
+    background-color: #E7E9DE;
+    height: 40vh;
+    box-shadow: 2px  5px 10px #888888 inset;
+}
+.a-tag{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.a-tag:hover{
+    color: black;
+    transition: 0.2s;
+    font-size: large;
+}
+
+.header-container-block{
+    display: none !important;
+}
+
+@media only screen and (max-width:1190px){
+    .first-img-container{
+        width: 75%;
+    }
+}
+@media only screen and (max-width:1050px){
+    .first-img-container{
+        width: 80%;
+    }
+    .big-text{
+        font-size: 600%;
+    }
+    .p-third-tag{
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width:870px){
+    .first-img-container{
+        width: 85%;
+    }
+    .big-text{
+        font-size: 500%;
+    }
+    .p-first-tag{
+        font-size: small;
+    }
+    .header-container{
+        display: none !important;
+    }
+    .header-container-block{
+        display: block !important;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        position: absolute;
+        right: 40px;
+        top: 5%;
+    }
+    .nav-elements {
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        background-color: transparent;
+        width: 0;
+        height: auto;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+    }
+    .nav-elements.active {
+        width: 120px;
+    }
+    ul{
+        padding: 0;
+    }
+    ul a{
+        text-decoration: none;
+        color: black;
+    }
+    ul a:hover{
+        color: black;
+    }
+
+    ul p {
+        width: 100%;
+        
+    }
+    .nav-elements ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-elements ul li {
+        margin-right: unset;
+        margin-top: 22px;
+    }
+}
+@media only screen and (max-width:800px){
+    .p-third-tag{
+        font-size: 13px !important;
+    }
+    .h1-third-tad{
+        font-size: 20px !important;
+    }
+    .nav-elements{
+        top: 55px;
+    }
+}
+@media only screen and (max-width:700px){
+    .first-img-container{
+        width: 85%;
+    }
+    .big-text{
+        font-size: 400%;
+    }
+    .p-first-tag{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width:600px){
+
+    .responsive-first-page-container{
+        display: block !important;
+    }
+    .first-page-container{
+        display: none !important;
+    }
+    .p-third-tag{
+        font-size: 10px !important;
+    }
+    .third-page-container{
+        min-height: auto !important;
+    }
+}
+@media only screen and (max-width:400px){
+    .h1-card-container{
+        font-size: large;
+    }
+    .p-third-tag{
+        font-size: 8px !important;
+    }
+}
